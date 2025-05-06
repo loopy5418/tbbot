@@ -7,9 +7,8 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user}")
-    await bot.sync_commands()  # Global sync
 
-@bot.slash_command(name="hello", description="Say hello to the bot!")
+@bot.slash_command(name="hello", description="Say hello to the bot!", guild_ids=None)
 async def hello(ctx):
     await ctx.respond("Hello there!")
 
