@@ -2,4 +2,4 @@ aiohttp==3.8.6
 attrs==23.1.0
 frozenlist==1.4.0
 multidict==6.0.4
-py-cord==2.5.0
+py-cord==2.3.2
